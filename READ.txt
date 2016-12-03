@@ -1,0 +1,3 @@
+Create a text file as message.txt and write message into it.
+Create another text file as input.txt and write email into it line by line.
+then run SENDMAIL.py to send emails.
