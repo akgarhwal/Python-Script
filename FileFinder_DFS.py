@@ -1,3 +1,6 @@
+#Do not search for files that start with '.'
+#using DFS
+
 import os
 import sys
 import time
