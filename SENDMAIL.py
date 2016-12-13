@@ -24,7 +24,7 @@ print("Message : \n",message)
 
 #read Email address from file (line by line)
 counter=0
-file = open("input.txt","r")
+file = open("email_sender.txt","r")
 for email in file:
 	# Sending the mail  	
 	server.sendmail(fromemail,email, message)
