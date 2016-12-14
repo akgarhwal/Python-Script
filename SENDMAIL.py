@@ -1,3 +1,8 @@
+#Instruction for SENAMAIL.py 
+#Create a text file as message.txt and write message(email) into it.
+#Create another text file as email_sender.txt and write email into it line by line.
+#then run SENDMAIL.py to send emails.
+
 import smtplib
 
 fromemail = 'XXXX'
