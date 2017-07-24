@@ -5,7 +5,7 @@ import urllib
 import os
 import re
 
-#remove dot from file name
+#remove '/' from file name
 def convert(filePath):
     name = ""
     for i in filePath[0:-4]:
@@ -37,7 +37,7 @@ def codeforces_data_scrap(handle):
             numPage = int(pageno[-2].get_text())
         page_url = '/page/'
 
-        for i in range(5, numPage + 1):
+        for i in range(1, numPage + 1):
             url = submission_url + handle + page_url + str(i)
             print url
 
@@ -95,15 +95,6 @@ def codeforces_data_scrap(handle):
                 text_file.close()
 
                 print("Done")
-                # if os.path.exists(dirPath):
-                #     text_file = open(filePath, "w")
-                #     text_file.write(sourceCode)
-                #     text_file.close()
-                # else:
-                #     os.makedirs(dirPath)
-                #     text_file = open(filePath, "w")
-                #     text_file.write(sourceCode)
-                #     text_file.close()
         print("Successful :)")
     except :
         print("Failed!! Try Again.")
